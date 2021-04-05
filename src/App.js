@@ -1,5 +1,6 @@
 import './App.css';
 import SongContainer from './containers/SongContainer';
+import BookContainer from './containers/BookContainer';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import { Route, Switch } from 'react-router';
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/songs" component={SongContainer}/>
+        <Route exact path="/books" component={BookContainer}/>
       </Switch>
     </div>
   );
