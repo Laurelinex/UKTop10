@@ -10,6 +10,36 @@
   color: white;
 }
 
+.nav-bar {
+  margin-left: 5%;
+  overflow: hidden;
+  min-width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li {
+  list-style-type: none;
+  
+}
+
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 1em 3em;
+  font-size: 1.5rem;
+}
+
+.nav-bar ul li a:hover {
+  font-weight: bolder;
+}
+
 .song-container {
   display: flex;
   justify-content: space-around;
