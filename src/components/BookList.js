@@ -1,11 +1,15 @@
-const BookList = ({books}) => {
+const BookList = ({books, loaded, onBookSelected}) => {
+
+    if (!loaded) {
+        return <p>Loading...</p>
+    }
 
     const bookListItems = books.map((book, index) => {
-        return <li key={index}>{book.name}</li>
+        return <li key={index} onClick={() => onBookSelected(book)}>{book.name}</li>
     })
 
     return(
-        <div className="book-list">
+        <div className="item-list">
             <ol>{bookListItems}</ol>
         </div>
     )

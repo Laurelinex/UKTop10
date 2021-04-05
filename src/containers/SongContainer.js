@@ -23,7 +23,7 @@ const SongContainer = () => {
     }
 
     return(
-        <div className="song-container">
+        <div className="item-container">
             <SongList songs={allSongs} onSongSelected={handleSelectedSong} />
             <SongDetail song={selectedSong}/>
         </div>

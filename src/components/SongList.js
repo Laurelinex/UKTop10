@@ -7,7 +7,7 @@ const SongList = ({songs, onSongSelected}) => {
     })
 
     return(
-        <div className="song-list">
+        <div className="item-list">
             <ol>{songListItems}</ol>
         </div>
     )

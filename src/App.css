@@ -2,18 +2,26 @@
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
 }
+
+/* .home-img {
+  height: 20rem;
+} */
 
 .nav-bar {
   margin-left: 5%;
   overflow: hidden;
   min-width: 95vw;
+  min-height: 15vh;
+  max-height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,23 +48,23 @@
   font-weight: bolder;
 }
 
-.song-container {
+.item-container {
   display: flex;
   justify-content: space-around;
 }
 
-.song-list {
+.item-list {
   text-align: left;
   height: 80vh;
   width: 60vw;
   overflow: scroll;
 }
 
-.song-list > ol >li {
+.item-list > ol >li {
   margin: 20px;
 }
 
-.song-detail {
+.item-detail {
   border: solid white;
   width: 30vw;
 }

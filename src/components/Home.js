@@ -3,7 +3,7 @@ const Home = () => {
     return(
         <>
         <h1>Top Stuff on iTunes</h1>
-        <img src="https://www.pngkit.com/png/full/57-576353_free-png-happy-men-png-images-transparent-transparent.png" alt="happy guy" />
+        <img className="home-img" src="https://cdn.pixabay.com/photo/2018/03/12/18/25/guy-3220439_960_720.png" alt="happy guy" />
         </>
     )
 }
