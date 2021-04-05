@@ -8,7 +8,7 @@ const SongList = ({songs}) => {
 
     return(
         <div className="song-list">
-            <ul>{songListItems}</ul>
+            <ol>{songListItems}</ol>
         </div>
     )
 }

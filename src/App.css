@@ -10,6 +10,18 @@
   color: white;
 }
 
+.song-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.song-list {
+  text-align: left;
+  height: 80vh;
+  width: 50vw;
+  overflow: scroll;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
