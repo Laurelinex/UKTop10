@@ -2,7 +2,11 @@
 
 const SongDetail = ({song}) => {
     if(!song) {
-        return null;
+        return (
+            <div className="song-detail">
+                <p>Pick a song to know more!</p>
+            </div>
+        )
     }
 
     return (
