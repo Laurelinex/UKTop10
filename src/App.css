@@ -18,8 +18,17 @@
 .song-list {
   text-align: left;
   height: 80vh;
-  width: 50vw;
+  width: 60vw;
   overflow: scroll;
+}
+
+.song-list > ol >li {
+  margin: 20px;
+}
+
+.song-detail {
+  border: solid white;
+  width: 30vw;
 }
 
 .App-logo {

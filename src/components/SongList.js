@@ -1,9 +1,9 @@
 
 
-const SongList = ({songs}) => {
+const SongList = ({songs, onSongSelected}) => {
 
     const songListItems = songs.map((song, index) => {
-        return <li key={index}>{song['im:name']['label']}</li>
+        return <li key={index} onClick={() => onSongSelected(song)}>{song['im:name']['label']}</li>
     })
 
     return(

@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import SongList from '../components/SongList';
+import SongDetail from '../components/SongDetail';
 
 const SongContainer = () => {
 
     const [allSongs, setAllSongs] = useState([]);
+    const [selectedSong, setSelectedSong] = useState(null);
 
     const getAllSongs = () => {
         console.log("Fetching things...")
@@ -16,9 +18,14 @@ const SongContainer = () => {
         getAllSongs();
     }, []);
 
+    const handleSelectedSong = (song) => {
+        setSelectedSong(song);
+    }
+
     return(
         <div className="song-container">
-            <SongList songs={allSongs} />
+            <SongList songs={allSongs} onSongSelected={handleSelectedSong} />
+            <SongDetail song={selectedSong}/>
         </div>
     )
 }
