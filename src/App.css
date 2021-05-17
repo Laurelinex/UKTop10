@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #5C465D;
+  background-color: #DEDEDE;
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: #DEDEDE;
+  /* color: #DEDEDE; */
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
 } */
 
 .nav-bar {
-  margin-left: 5%;
+  /* margin-left: 5%; */
   overflow: hidden;
   min-width: 95vw;
   min-height: 15vh;
@@ -25,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #5C465D;
 }
 
 .nav-bar ul {
@@ -42,10 +43,18 @@
   display: block;
   padding: 1em 3em;
   font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 .nav-bar ul li a:hover {
   font-weight: bolder;
+}
+
+.logo {
+  /* border: solid red; */
+  width: 20%;
+  padding-left: 2%;
 }
 
 .item-container {
