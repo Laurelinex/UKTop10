@@ -1,6 +1,10 @@
-const SongTable = () => {
+const SongTable = ({songs}) => {
 
-    return null;
+    return (
+        <table className="song-table">
+            
+        </table>
+    );
 
 }
 

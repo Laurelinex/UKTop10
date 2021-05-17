@@ -1,5 +1,5 @@
 import './App.css';
-import SongTableContainer from './containers/SongContainer';
+import SongTableContainer from './containers/SongTableContainer';
 import NavBar from './components/NavBar';
 import { Route, Switch } from 'react-router';
 
@@ -21,9 +21,6 @@ function App() {
             <SongTableContainer genres={genres}/>
           )
         }} />
-        {/* <Route exact path="/" component={Home} />
-        <Route exact path="/songs" component={SongContainer}/>
-        <Route exact path="/books" component={BookContainer}/> */}
       </Switch>
     </div>
   );

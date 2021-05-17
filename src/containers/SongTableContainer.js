@@ -5,20 +5,17 @@ const SongTableContainer = ({genres}) => {
 
     const [allSongs, setAllSongs] = useState([]);
 
-    const getAllSongs = () => {
-        console.log("Fetching things...")
-        fetch('https://itunes.apple.com/gb/rss/topsongs/limit=20/json')
+    const getAllSongs = url => {
+        console.log("Fetching songs...")
+        fetch(url)
         .then(res => res.json())
         .then(data => setAllSongs(data.feed.entry))
+        .catch(err => console.error);
     }
 
     useEffect(() => {
-        getAllSongs();
-    }, []);
-
-    // const handleSelectedSong = (song) => {
-    //     setSelectedSong(song);
-    // }
+        getAllSongs(genres[0].url);
+    }, [genres]);
 
     return(
         <div className="item-container">
