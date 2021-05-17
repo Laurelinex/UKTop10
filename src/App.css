@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #5C465D;
   min-height: 100vh;
   max-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #DEDEDE;
   overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .nav-bar ul li a {
-  color: white;
+  color: #DEDEDE;
   text-decoration: none;
   display: block;
   padding: 1em 3em;
@@ -65,7 +65,7 @@
 }
 
 .item-detail {
-  border: solid white;
+  border: solid #DEDEDE;
   width: 30vw;
 }
 
@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #DEDEDE;
 }
 
 .App-link {
