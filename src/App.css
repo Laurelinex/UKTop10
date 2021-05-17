@@ -94,14 +94,18 @@
 }
 
 .cover-trim-div {
+  /* border: solid red; */
   max-height: 165px;
   max-width: 165px;
+  min-height: 165px;
+  min-width: 165px;
   overflow: hidden;
-}
-
-.song-cover {
   box-shadow: 0 4px 8px 0 #F54F87, 0 6px 20px 0 #F54F87;
 }
+
+/* .song-cover {
+  box-shadow: 0 4px 8px 0 #F54F87, 0 6px 20px 0 #F54F87;
+} */
 
 .song-title {
   font-weight: bolder;

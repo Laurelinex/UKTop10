@@ -18,7 +18,22 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => {
           return (
-            <SongTableContainer genres={genres}/>
+            <SongTableContainer genres={genres[0]}/>
+          )
+        }} />
+        <Route exact path="/rock" render={() => {
+          return (
+            <SongTableContainer genres={genres[1]}/>
+          )
+        }} />
+        <Route exact path="/dance" render={() => {
+          return (
+            <SongTableContainer genres={genres[2]}/>
+          )
+        }} />
+        <Route exact path="/country" render={() => {
+          return (
+            <SongTableContainer genres={genres[3]}/>
           )
         }} />
       </Switch>

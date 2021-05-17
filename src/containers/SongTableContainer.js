@@ -14,7 +14,7 @@ const SongTableContainer = ({genres}) => {
     }
 
     useEffect(() => {
-        getAllSongs(genres[0].url);
+        getAllSongs(genres.url);
     }, [genres]);
 
     return(
