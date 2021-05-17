@@ -1,5 +1,3 @@
-
-
 const SongList = ({songs, onSongSelected}) => {
 
     const songListItems = songs.map((song, index) => {
