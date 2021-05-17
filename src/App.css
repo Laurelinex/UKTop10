@@ -2,14 +2,12 @@
   text-align: center;
   background-color: #DEDEDE;
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   /* color: #DEDEDE; */
-  overflow: hidden;
 }
 
 /* .home-img {
@@ -26,6 +24,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #5C465D;
+  position: fixed;
 }
 
 .nav-bar ul {
@@ -57,7 +56,12 @@
   padding-left: 2%;
 }
 
-.item-container {
+.table-container {
+  padding-top: 15vh;
+  overflow: scroll;
+}
+
+/* .item-container {
   display: flex;
   justify-content: space-around;
 }
@@ -76,7 +80,7 @@
 .item-detail {
   border: solid #DEDEDE;
   width: 30vw;
-}
+} */
 
 .App-logo {
   height: 40vmin;

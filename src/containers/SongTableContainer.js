@@ -18,7 +18,7 @@ const SongTableContainer = ({genres}) => {
     }, [genres]);
 
     return(
-        <div className="item-container">
+        <div className="table-container">
             <SongTable songs={allSongs} />
         </div>
     )
