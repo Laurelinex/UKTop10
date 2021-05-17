@@ -1,8 +1,8 @@
 const SongTable = ({songs}) => {
 
-    // const songListItems = songs.map((song, index) => {
-    //     return <td key={index} >{song['im:name']['label']}</td>
-    // })
+    if (songs.length === 0) {
+        return <p>Loading...</p>
+    }
 
     const songTableElements = songs.map((song, index) => {
         return (
@@ -18,7 +18,11 @@ const SongTable = ({songs}) => {
                 <td className="song-artists">{song['im:artist']['label']}</td>
             </tr>
             <tr>
-                <td>PLAYER</td>
+                <td>
+                    <audio controls>
+                        <source src={song['link'][1]['attributes']['href']} />
+                    </audio>
+                </td>
             </tr>
             </>
         )
@@ -26,6 +30,11 @@ const SongTable = ({songs}) => {
 
     return (
         <table className="song-table">
+            <colgroup>
+            <col className="col1"/>
+            <col className="col2"/>
+            <col className="col3"/>
+            </colgroup>
             <tbody>
                 {songTableElements}
             </tbody>
