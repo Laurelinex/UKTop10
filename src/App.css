@@ -25,6 +25,7 @@
   align-items: center;
   background-color: #5C465D;
   position: fixed;
+  z-index: 1;
 }
 
 .nav-bar ul {
@@ -33,7 +34,6 @@
 
 .nav-bar ul li {
   list-style-type: none;
-  
 }
 
 .nav-bar ul li a {
@@ -57,21 +57,62 @@
 }
 
 .table-container {
-  padding-top: 15vh;
+  padding-top: 18vh;
   overflow: scroll;
 }
 
-.col1 {
-  background-color: red;
+/* audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 200px;
+  height: 25px;
+} */
+
+.song-table {
+  width: 80vw;
+  font-family: 'Open Sans', sans-serif;
+  color: #5C465D;
+  border-collapse: separate;
+  border-spacing: 15px;
 }
 
-.col2 {
+/* .song-table tr {
+  line-height: 10vmin;
+  background-color: rosybrown;
+} */
+
+.col1 {
+  width: 30vmin
+}
+
+.song-position-number {
+  font-size: 4rem;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#F54F87, #5C465D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cover-trim-div {
+  max-height: 165px;
+  max-width: 165px;
+  overflow: hidden;
+}
+
+.song-cover {
+  box-shadow: 0 4px 8px 0 #F54F87, 0 6px 20px 0 #F54F87;
+}
+
+.song-title {
+  font-weight: bolder;
+}
+
+/* .col2 {
   background-color: yellow;
 }
 
 .col3 {
   background-color: green;
-}
+} */
 
 /* .item-container {
   display: flex;
