@@ -1,3 +1,5 @@
+import ReactAudioPlayer from 'react-audio-player';
+
 const SongTable = ({songs}) => {
 
     if (songs.length === 0) {
@@ -19,9 +21,13 @@ const SongTable = ({songs}) => {
             </tr>
             <tr>
                 <td>
-                    <audio controls>
+                    <ReactAudioPlayer 
+                        src={song['link'][1]['attributes']['href']}
+                        controls
+                    />
+                    {/* <audio controls>
                         <source src={song['link'][1]['attributes']['href']} />
-                    </audio>
+                    </audio> */}
                 </td>
             </tr>
             </>
