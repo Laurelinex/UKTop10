@@ -26,6 +26,7 @@
 
 .nav-bar ul {
   display: flex;
+  overflow: scroll;
 }
 
 .nav-bar ul li {
