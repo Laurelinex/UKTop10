@@ -116,12 +116,31 @@
 
 audio {
   width: 50vmin;
-  height: 2rem;
+  height: 2.2rem;
   margin: 2rem;
 }
 
 
-
+audio::-webkit-media-controls-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* We use flex-start here to ensure that the play button is visible even
+   * if we are too small to show all controls.
+   */
+  justify-content: flex-start;
+  -webkit-user-select: none;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+  text-align: right;
+  bottom: auto;
+  background-color: #bba8ae;
+  border-radius: 5px;
+  /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
+  transition: opacity 0.3s;
+}
 
 
 
