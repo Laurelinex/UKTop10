@@ -52,6 +52,10 @@
   padding-left: 2%;
 }
 
+.logo-mobile {
+  display: none;
+}
+
 .table-container {
   padding-top: 18vh;
   overflow: scroll;
@@ -119,6 +123,50 @@
   td:before {
     position: absolute;
     white-space: nowrap;
+  }
+
+  /* Restyled navbar for mobiles */
+
+  .nav-bar {
+    width: 100%;
+    
+    min-height: 10vh;
+    max-height: 10vh;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    /* border: solid red; */
+    display: inline;
+    /* position: fixed; */
+    width: 12%;
+    padding-left: 2%;
+    z-index: 2;
+  }
+
+  .nav-bar ul {
+    padding: 0;
+    margin-left: 10%;
+    overflow: scroll;
+  }
+
+  .nav-bar ul li a {
+    font-size: 1rem;
+    padding: 0em 1.5em;
+  }
+
+  .nav-bar ul li {
+    /* border: solid blue; */
+    width: 100%;
+    float: none;
+  }
+
+  .nav-bar .logo {
+    border: solid red;
+
   }
 
 }
