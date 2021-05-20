@@ -10,7 +10,9 @@ const NavBar = () => {
             <ul>
                 <li><Link className="nav-link" to="/">All</Link></li>
                 <li><Link className="nav-link" to="/rock">Rock</Link></li>
+                <li><Link className="nav-link" to="/rap">Rap</Link></li>
                 <li><Link className="nav-link" to="/dance">Dance</Link></li>
+                <li><Link className="nav-link" to="/rnb">R&amp;B</Link></li>
                 <li><Link className="nav-link" to="/country">Country</Link></li>
             </ul>
         </div>
