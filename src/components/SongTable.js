@@ -26,9 +26,6 @@ const SongTable = ({songs}) => {
                         src={song['link'][1]['attributes']['href']}
                         controls
                     />
-                    {/* <audio controls>
-                        <source src={song['link'][1]['attributes']['href']} />
-                    </audio> */}
                 </td>
             </tr>
             </>

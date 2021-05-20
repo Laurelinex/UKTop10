@@ -5,9 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  /* color: #DEDEDE; */
 }
 
 .nav-bar {
@@ -54,7 +52,6 @@
 }
 
 .logo {
-  /* border: solid red; */
   width: 20%;
   padding-left: 2%;
 }
@@ -89,22 +86,6 @@
   
 }
 
-/* .cover-trim-div {
-  text-align: center;
-  max-height: 165px;
-  max-width: 165px;
-  min-height: 165px;
-  min-width: 165px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px 0 #F54F87, 0 6px 20px 0 #F54F87;
-} */
-
-/* .song-cover {
-  text-align: center;
-  margin: auto;
-  
-} */
-
 .song-title {
   font-weight: bolder;
 }
@@ -114,35 +95,19 @@
   margin: 1rem;
 }
 
+/* AUDIO PLAYER */
+
 audio {
   width: 50vmin;
   height: 2.2rem;
   margin: 2rem;
 }
 
-
 audio::-webkit-media-controls-panel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* We use flex-start here to ensure that the play button is visible even
-   * if we are too small to show all controls.
-   */
-  justify-content: flex-start;
-  -webkit-user-select: none;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  overflow: hidden;
-  text-align: right;
-  bottom: auto;
   background-color: #bba8ae;
-  border-radius: 5px;
-  /* The duration is also specified in MediaControlElements.cpp and LayoutTests/media/media-controls.js */
-  transition: opacity 0.3s;
 }
 
-
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
 
@@ -150,7 +115,6 @@ audio::-webkit-media-controls-panel {
 
   table, tbody, th, td, tr {
     display: block;
-    /* border: solid red; */
   }
 
   td {
@@ -178,9 +142,7 @@ audio::-webkit-media-controls-panel {
   }
 
   .logo-mobile {
-    /* border: solid red; */
     display: inline;
-    /* position: fixed; */
     width: 12%;
     padding-left: 2%;
     z-index: 2;
@@ -197,14 +159,8 @@ audio::-webkit-media-controls-panel {
   }
 
   .nav-bar ul li {
-    /* border: solid blue; */
     width: 100%;
     float: none;
-  }
-
-  .nav-bar .logo {
-    border: solid red;
-
   }
 
 }
