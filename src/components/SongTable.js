@@ -12,7 +12,8 @@ const SongTable = ({songs}) => {
             <tr>
                 <td className="song-position-number" rowSpan="3">{index + 1}</td>
                 <td className="song-cover" rowSpan="3">
-                    <div className="cover-trim-div"><img src={song['im:image'][2]['label']} alt="Track cover"/></div>
+                    <img src={song['im:image'][2]['label']} alt="Track cover"/>
+                    {/* <div className="cover-trim-div"></div> */}
                 </td>
                 <td className="song-title">{song['im:name']['label']}</td>
             </tr>
