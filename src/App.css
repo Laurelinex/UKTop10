@@ -11,7 +11,6 @@
 }
 
 .nav-bar {
-  /* margin-left: 5%; */
   overflow: hidden;
   min-width: 95vw;
   min-height: 15vh;
@@ -27,6 +26,13 @@
 .nav-bar ul {
   display: flex;
   overflow: scroll;
+  -ms-overflow-style: none;  /* Hides scrollbar in IE and Edge */
+  scrollbar-width: none;  /* and Firefox */
+}
+
+/* Hides scrollbar in Chrome, Safari and Opera */
+.nav-bar ul::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-bar ul li {
@@ -164,7 +170,6 @@ audio {
   .nav-bar ul {
     padding: 0;
     margin-left: 10%;
-    overflow: scroll;
   }
 
   .nav-bar ul li a {
